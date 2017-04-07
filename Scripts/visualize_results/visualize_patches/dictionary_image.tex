@@ -1,0 +1,93 @@
+\documentclass[graphics]{beamer}
+
+\usepackage{amscd,amssymb,amsfonts}
+\usepackage{movie15}
+\usepackage{picture,xcolor}
+\setbeamertemplate{navigation symbols}{} %remove navigation symbols
+
+
+\mode<presentation>
+{
+  \usetheme{default}
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{chancery}
+\usepackage[T1]{fontenc}
+
+\DefineNamedColor{named}{Brown}{cmyk}{0.45,0.63,0.71,0.38}
+\DefineNamedColor{named}{Turquoise}{cmyk}{0.74,0.13,0.11,0}
+\DefineNamedColor{named}{Orange}{cmyk}{0.03,0.72,0.86,0}
+\DefineNamedColor{named}{Gray}{cmyk}{0.28,0.22,0.22,0.00}
+\DefineNamedColor{named}{superpinkki}{cmyk}{0.36,0.80,0,0}
+\DefineNamedColor{named}{turquois}{cmyk}{0.79,0.18,0.28,0}
+\DefineNamedColor{named}{DarkGray}{cmyk}{0,0,0,.8}
+\DefineNamedColor{named}{MediumGray}{cmyk}{0,0,0,.5}
+\DefineNamedColor{named}{LightGray}{cmyk}{0,0,0,.15}
+\DefineNamedColor{named}{VeryLightGray}{cmyk}{0,0,0,.05}
+\DefineNamedColor{named}{VeryLightOrange}{rgb}{1,0.8824,0.3333}
+\DefineNamedColor{named}{brown}{cmyk}{0.34,0.61,1,0.24}
+\DefineNamedColor{named}{orange}{cmyk}{0.17,0.85,1,0.07}
+\DefineNamedColor{named}{yellow}{cmyk}{0.07,0.18,0.86,0}
+\DefineNamedColor{named}{DarkGreen}{cmyk}{0.78,0.39,1,0.33}
+%\DefineNamedColor{named}{purple}{cmyk}{0.56,0.65,0.45,0.23}
+\DefineNamedColor{named}{purple}{rgb}{0.42,0.33,0.39}
+\DefineNamedColor{named}{lightorange}{cmyk}{0,0.04,.42,0} % Lighter orange
+%\DefineNamedColor{named}{DarkGreen}{cmyk}{0.56,0.07,1,0} % Lighter green
+%\DefineNamedColor{named}{purple}{cmyk}{0.14,0.93,0.81,0.04} % Alternative purple
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{titlelike}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=orange,bg=white}
+\setbeamercolor{section in toc}{fg=purple,bg=white}
+\setbeamercolor{theoremlike}{fg=purple,bg=white}
+\usefonttheme{structurebold}
+
+
+
+\title{\textcolor{DarkGreen}{Atoms and dictionaries}}
+
+\author{{\bf Samuli Siltanen}}
+\institute[University of Helsinki, Finland]{
+  Department of Mathematics and Statistics\\
+  University of Helsinki, Finland\\{\tt samuli.siltanen@helsinki.fi}\\http://www.siltanen-research.net}
+
+
+\date
+{\alert{\today}}
+
+
+\begin{document}
+
+
+\begin{frame}{Pepper dictionary with $8{\times}8$ atoms}
+\begin{picture}(320,210)
+\input{Peppers1_8x8}
+\end{picture}
+\end{frame}
+
+\begin{frame}{Pepper dictionary with $12{\times}12$ atoms}
+\begin{picture}(320,210)
+\input{Peppers1_12x12}
+\end{picture}
+\end{frame}
+
+\begin{frame}{Match dictionary with $8{\times}8$ atoms}
+\begin{picture}(320,210)
+\input{Matches1_8x8}
+\end{picture}
+\end{frame}
+
+\begin{frame}{Match dictionary with $12{\times}12$ atoms}
+\begin{picture}(320,210)
+\input{Matches1_12x12}
+\end{picture}
+\end{frame}
+
+
+
+
+\end{document}
